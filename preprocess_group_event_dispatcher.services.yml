@@ -1,0 +1,9 @@
+services:
+  preprocess_group_event_dispatcher.preprocess.factory.group:
+    class: \Drupal\preprocess_group_event_dispatcher\Event\Factory\GroupPreprocessEventFactory
+    tags:
+      - { name: preprocess_event_factory }
+  preprocess_group_event_dispatcher.preprocess.factory.group_content:
+    class: \Drupal\preprocess_group_event_dispatcher\Event\Factory\GroupContentPreprocessEventFactory
+    tags:
+      - { name: preprocess_event_factory }
